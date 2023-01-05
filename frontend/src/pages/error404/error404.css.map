@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"error404.css"}
+{"version":3,"sourceRoot":"","sources":["../../assets/styles/abstracts/_fonts.scss","error404.scss","../../assets/styles/abstracts/_variables.scss"],"names":[],"mappings":"AAAQ;ACGR;EACE;EAEA;EACA;EACA;;AAEA;EACE;EACA;EACA,OCZK;;ADeP;EACE;EACA;EACA,OClBK;;ADqBP;EACE;EACA,OCvBK","file":"error404.css"}

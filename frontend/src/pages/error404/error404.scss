@@ -1,0 +1,27 @@
+@import "../../assets/styles/abstracts/variables";
+@import "../../assets/styles/abstracts/fonts";
+
+#error-page {
+  font-family: 'Montserrat', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    font-size: 275px;
+    margin: 50px 0 0 0;
+    color: $salmon;
+  }
+
+  p {
+    font-size: 36px;
+    margin: 25px 0 0 0;
+    color: $salmon;
+  }
+
+  a {
+    margin-top: 200px;
+    color: $salmon;
+  }
+}
