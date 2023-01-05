@@ -7,6 +7,7 @@ import App from './App';
 import {Error404} from './pages/error404/error404';
 import {AccommodationCard} from './pages/accommodation-card/accommodation-card';
 import {About} from './pages/about/about';
+import {Header} from './components/header/header';
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+        <Header/>
         <RouterProvider router={router}/>
     </React.StrictMode>
 );
