@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider,} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import App from './App';
+import Home from './pages/home/home';
 import {Error404} from './pages/error404/error404';
 import {AccommodationCard} from './pages/accommodation-card/accommodation-card';
 import {About} from './pages/about/about';
 import {Header} from './components/header/header';
+import {Footer} from './components/footer/footer';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>,
+        element: <Home/>,
         errorElement: <Error404/>,
     },
     {
@@ -31,6 +32,7 @@ root.render(
     <React.StrictMode>
         <Header/>
         <RouterProvider router={router}/>
+        <Footer/>
     </React.StrictMode>
 );
 
