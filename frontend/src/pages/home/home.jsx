@@ -10,7 +10,7 @@ function Home() {
                 <img src={logo} alt="logo"/>
             </div>
             <section>
-                <p>y</p>
+                <p>yes</p>
             </section>
         </main>
     );
