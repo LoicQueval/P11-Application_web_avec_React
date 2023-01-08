@@ -1,16 +1,15 @@
 import './home.scss'
+import {Card} from '../../components/card/card';
+import {Banner} from '../../components/banner/banner';
 import logo from '../../assets/images/other/home.png';
+import '../../data/data.json'
 
 function Home() {
     return (
         <main id="home-page">
-            <div className="banner">
-                <div className="card-overlay"></div>
-                <p>Chez vous, partout et ailleurs</p>
-                <img src={logo} alt="logo"/>
-            </div>
+            <Banner text="Chez vous, partout et ailleurs" banner={logo}/>
             <section>
-                <p>yes</p>
+                <Card/>
             </section>
         </main>
     );
