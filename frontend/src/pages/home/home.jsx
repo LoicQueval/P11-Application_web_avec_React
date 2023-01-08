@@ -4,7 +4,7 @@ import logo from '../../assets/images/other/home.png';
 function Home() {
     return (
         <main id="home-page">
-            <div>
+            <div className="banner">
                 <div className="card-overlay"></div>
                 <p>Chez vous, partout et ailleurs</p>
                 <img src={logo} alt="logo"/>

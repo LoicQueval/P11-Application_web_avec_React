@@ -1,9 +1,6 @@
 @import "../../assets/styles/abstracts/variables";
-@import "../../assets/styles/abstracts/fonts";
 
 #error-page {
-  font-family: 'Montserrat', sans-serif;
-
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -21,7 +18,7 @@
   }
 
   a {
-    margin: 200px 0;
+    margin: 177px 0;
     color: $salmon;
   }
 }
