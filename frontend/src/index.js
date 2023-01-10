@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider,} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+import './index.scss';
 import Home from './pages/home/home';
 import {Error404} from './pages/error404/error404';
 import {AccommodationCard} from './pages/accommodation-card/accommodation-card';
