@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import Home from './pages/home/home';
 import {Error404} from './pages/error404/error404';
-import {AccommodationCard} from './pages/accommodation-card/accommodation-card';
+import {LogementDetail} from './pages/logement-detail/logement-detail';
 import {About} from './pages/about/about';
 import {Header} from './components/header/header';
 import {Footer} from './components/footer/footer';
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         errorElement: <Error404/>,
     },
     {
-        path: '/accommodation-card',
-        element: <AccommodationCard/>,
+        path: '/logement/:logementId',
+        element: <LogementDetail/>,
     },
     {
         path: '/about',

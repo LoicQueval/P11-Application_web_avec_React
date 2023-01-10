@@ -6,11 +6,11 @@ export const Card = ({data}) => {
         <section>
             {data && (<>{
                     data.map((item) => (
-                        <div id="card">
+                        <a id="card" key={item.id} href={`/logement/${item.id}`}>
                             <div className="layout"></div>
                             <p>{item.title}</p>
                             <img className="article" src={item.cover} alt="cover"/>
-                        </div>
+                        </a>
                     ))
                 }</>
             )}
