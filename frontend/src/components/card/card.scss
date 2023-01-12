@@ -1,6 +1,6 @@
 @import "../../assets/styles/abstracts/variables";
 
-section {
+#card {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@ section {
     margin-bottom: 20px;
   }
 
-  #card {
+  #card-content {
     position: relative;
     display: flex;
     align-items: baseline;

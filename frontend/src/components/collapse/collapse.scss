@@ -1,1 +1,50 @@
-mù56àooooooooooooooooooooooooooooppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+@import "../../assets/styles/abstracts/variables";
+
+#collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 60px 0 255px 0;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 100%;
+    max-width: 1032px;
+    background-color: $salmon;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    h2 {
+      font-weight: 500;
+      margin: 0 20px;
+      color: white;
+    }
+
+    img {
+      margin-right: 20px;
+      height: 19px;
+    }
+  }
+
+  div {
+    width: 100%;
+    max-width: 1032px;
+
+    .content {
+      display: none;
+
+      p {
+        font-size: 24px;
+        background-color: $light-grey;
+        color: $salmon;
+        padding: 27px 27px 19px 18px;
+        margin: 0;
+      }
+    }
+  }
+}
