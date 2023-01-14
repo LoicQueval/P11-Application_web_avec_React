@@ -1,9 +1,10 @@
 @import "../../assets/styles/abstracts/variables";
 
-#error-page {
+.error-page {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 208px;
 
   h2 {
     font-size: 275px;
@@ -18,7 +19,7 @@
   }
 
   a {
-    margin: 177px 0;
+    margin-top: 177px;
     color: $salmon;
   }
 }

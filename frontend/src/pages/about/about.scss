@@ -1,0 +1,14 @@
+.collapse-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0 273px 0;
+
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+    margin: 20px 0 141px 0;
+  }
+}
+
+

@@ -1,11 +1,14 @@
 @import "../../assets/styles/abstracts/variables";
 
-#collapse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin: 60px 0 255px 0;
+.collapse {
+  width: 100%;
+  max-width: 932px;
+  @media screen and (max-width: 992px) {
+    max-width: 650px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 450px;
+  }
 
   button {
     display: flex;
@@ -13,37 +16,81 @@
     justify-content: space-between;
     height: 48px;
     width: 100%;
-    max-width: 1032px;
-    background-color: $salmon;
     cursor: pointer;
     border: none;
+    background-color: $salmon;
     border-radius: 5px;
-
-    h2 {
-      font-weight: 500;
-      margin: 0 20px;
-      color: white;
+    @media screen and (max-width: 992px) {
+      height: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 30px;
     }
 
-    img {
-      margin-right: 20px;
+    h2 {
+      font-size: 24px;
+      margin: 0 20px;
+      font-weight: 500;
+      color: white;
+      @media screen and (max-width: 992px) {
+        font-size: 18px;
+        margin: 0 15px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 15px;
+        margin: 0 10px;
+      }
+    }
+
+    .open-collapse-arrow {
       height: 19px;
+      margin-right: 20px;
+      rotate: 180deg;
+      @media screen and (max-width: 992px) {
+        height: 16px;
+        margin-right: 15px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 13px;
+        margin-right: 10px;
+      }
+    }
+
+    .close-collapse-arrow {
+      height: 19px;
+      margin-right: 20px;
+      rotate: 0deg;
+      @media screen and (max-width: 992px) {
+        height: 16px;
+        margin-right: 15px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 13px;
+        margin-right: 10px;
+      }
     }
   }
 
-  div {
-    width: 100%;
-    max-width: 1032px;
+  .close-collapse {
+    display: none;
+  }
 
-    .content {
-      display: none;
+  .open-collapse {
+    display: initial;
 
-      p {
-        font-size: 24px;
-        background-color: $light-grey;
-        color: $salmon;
-        padding: 27px 27px 19px 18px;
-        margin: 0;
+    p {
+      font-size: 24px;
+      padding: 27px 27px 19px 18px;
+      margin: 0;
+      color: $salmon;
+      background-color: $light-grey;
+      @media screen and (max-width: 992px) {
+        font-size: 18px;
+        padding: 21px 15px 30px 14px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        padding: 15px 6px 42px 11px;
       }
     }
   }
