@@ -1,4 +1,14 @@
-.banner {
+.home {
+  @media screen and (max-width: 992px) {
+    height: 160px;
+    margin: 0 0 20px 0;
+  }
+  @media screen and (max-width: 768px) {
+    height: 111px;
+  }
+}
+
+.banner, .home {
   position: relative;
   display: flex;
   align-items: center;
@@ -8,11 +18,7 @@
   width: 100%;
 
   @media screen and (max-width: 992px) {
-    height: 160px;
     margin: 0 0 20px 0;
-  }
-  @media screen and (max-width: 768px) {
-    height: 111px;
   }
 
   .banner-overlay {

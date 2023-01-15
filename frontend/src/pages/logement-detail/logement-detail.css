@@ -1,3 +1,7 @@
-
+#logement-detail-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*# sourceMappingURL=logement-detail.css.map */

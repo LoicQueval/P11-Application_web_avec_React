@@ -1,8 +1,8 @@
 import './banner.scss'
 
-export const Banner = ({banner, text}) => {
+export const Banner = ({banner, text, page}) => {
     return (
-        <div className="banner">
+        <div className={page === '/' ? 'banner, home' : 'banner'}>
             <div className="banner-overlay"></div>
             <p>{text}</p>
             <img src={banner} alt="banner"/>

@@ -1,29 +1,35 @@
 import './slideshow.scss'
-import {useLocation} from 'react-router-dom';
+import {useState} from 'react';
+import slideshowArrow from '../../assets/images/icons/slideshow-arrow.png'
 
-export const Slideshow = ({data}) => {
-    const pathName = useLocation().pathname.split('/');
-    const id = pathName[pathName.length - 1];
-    console.log(data.map((item) => item.pictures))
-    data.map((item) => console.log(item.pictures))
-    console.log(id);
+export const Slideshow = ({pictures}) => {
+    const [count, setCount] = useState(0)
+
+    const onClickNextPicture = () => {
+        count === pictures.length - 1 ? setCount(0) : setCount(count + 1);
+    }
+
+    const onClickPreviousPicture = () => {
+        count === 0 ? setCount(pictures.length - 1) : setCount(count - 1)
+    }
+
     return (
-        <div>
-            {data && (
-                <>{
-                    data.map((item) => item.id === id ?
-                        (<div key={item.id}>{
-                            item.pictures.map((picture) => (<div>
-                                    <img src={picture} alt="toto"/>
-                                </div>
-                            ))
-                        }
-                        </div>)
-                        :
-                        undefined
+        <>
+            {pictures && (
+                <div className="slideshow">
+                    {pictures.length > 1 && (
+                        <button className="left-arrow" onClick={onClickPreviousPicture}>
+                            <img src={slideshowArrow} alt="next_arrow"/>
+                        </button>
                     )}
-                </>
+                    <img src={pictures[count]} alt="logement_pictures"/>
+                    {pictures.length > 1 && (
+                        <button className="next-arrow" onClick={onClickNextPicture}>
+                            <img src={slideshowArrow} alt="next_arrow"/>
+                        </button>
+                    )}
+                </div>
             )}
-        </div>
+        </>
     );
 }
