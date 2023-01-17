@@ -1,5 +1,134 @@
+@import "../../assets/styles/abstracts/variables";
+
 #logement-detail-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .logement-information {
+    display: flex;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      display: initial;
+    }
+
+    .logement-information-left {
+      width: 100%;
+
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+        color: $salmon;
+        margin: 0;
+
+        @media screen and (max-width: 992px) {
+          font-size: 27px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        color: $salmon;
+        margin: 5px 0;
+
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+
+      .tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+
+        @media screen and (max-width: 992px) {
+          margin-top: 15px;
+        }
+        @media screen and (max-width: 768px) {
+          margin-top: 10px;
+        }
+
+        p {
+          font-size: 14px;
+          color: white;
+          background-color: $salmon;
+          border-radius: 10px;
+          width: fit-content;
+          text-align: center;
+          padding: 5px 10px;
+          margin: 0;
+
+          @media screen and (max-width: 992px) {
+            font-size: 12px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .logement-information-right {
+      text-align: right;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 18px;
+          color: $salmon;
+          width: 93px;
+
+          @media screen and (max-width: 992px) {
+            font-size: 15px;
+            width: 73px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 12px;
+            width: 53px;
+          }
+        }
+
+        .profile {
+          border-radius: 100%;
+          object-fit: cover;
+          width: 64px;
+          height: 64px;
+          @media screen and (max-width: 992px) {
+            width: 48px;
+            height: 48px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .collapses {
+    display: flex;
+    gap: 76px;
+    width: 100%;
+    margin: 30px 0 183px 0;
+  }
 }

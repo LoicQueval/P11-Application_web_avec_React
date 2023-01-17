@@ -1,6 +1,5 @@
 import './card.scss'
 export const Card = ({data}) => {
-    console.log(data);
     return (
         <section id="card">
             {data && (<>{

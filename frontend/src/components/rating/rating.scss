@@ -1,0 +1,16 @@
+.rating {
+
+  .stars {
+    height: 30px;
+    width: 30px;
+
+    @media screen and (max-width: 992px) {
+      height: 23px;
+      width: 23px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
