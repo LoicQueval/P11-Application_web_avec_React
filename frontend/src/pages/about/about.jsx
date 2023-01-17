@@ -13,7 +13,7 @@ export const About = () => {
             <Banner text="" banner={banner} page={pathName}/>
             <section className="collapse-section">
                 {about && about.map(({title, text}, index) =>
-                    <Collapse title={title} text={text} key={`about-page-collapse-${index}`}/>
+                    <Collapse title={title} text={[text]} style={""} key={`about-page-collapse-${index}`}/>
                 )}
             </section>
         </main>

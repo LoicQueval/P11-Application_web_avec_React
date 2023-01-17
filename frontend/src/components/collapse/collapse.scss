@@ -76,21 +76,30 @@
   }
 
   .open-collapse {
-    display: initial;
+    padding: 27px 27px 19px 18px;
+    background-color: $light-grey;
+    height: 60%;
 
     p {
       font-size: 24px;
-      padding: 27px 27px 19px 18px;
       margin: 0;
       color: $salmon;
-      background-color: $light-grey;
       @media screen and (max-width: 992px) {
         font-size: 18px;
-        padding: 21px 15px 30px 14px;
       }
       @media screen and (max-width: 768px) {
         font-size: 12px;
-        padding: 15px 6px 42px 11px;
+      }
+    }
+
+    .logement {
+      font-size: 18px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
       }
     }
   }

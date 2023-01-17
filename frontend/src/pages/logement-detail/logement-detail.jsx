@@ -44,8 +44,8 @@ export const LogementDetail = () => {
                 </div>
             </div>
             <div className="collapses">
-                <Collapse text={logement.description} title="Description"/>
-                <Collapse text={logement.equipments} title="Équipement"/>
+                <Collapse text={[logement.description]} style="logement" title="Description"/>
+                <Collapse text={logement.equipments} style="logement" title="Équipement"/>
             </div>
         </main>
     );

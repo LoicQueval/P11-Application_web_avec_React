@@ -2,7 +2,7 @@ import './collapse.scss'
 import arrow from '../../assets/images/icons/collapse-arrow.png'
 import {useState} from 'react';
 
-export const Collapse = ({title, text}) => {
+export const Collapse = ({title, text, style}) => {
     const [isSelected, setSelected] = useState(false);
 
     const onCollapseSelected = () => {
@@ -17,7 +17,10 @@ export const Collapse = ({title, text}) => {
                      alt="arrow-icon"/>
             </button>
             <div className={isSelected ? 'open-collapse' : 'close-collapse'}>
-                <p>{text}</p>
+                {text.map((item, index) => (
+                    <p className={style === 'logement' ? 'logement' : ''} key={index}>{item}</p>
+                ))
+                }
             </div>
         </div>
     );
