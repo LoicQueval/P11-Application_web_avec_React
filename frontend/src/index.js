@@ -19,6 +19,7 @@ const router = createBrowserRouter([
     {
         path: '/logement/:logementId',
         element: <LogementDetail/>,
+        errorElement: <Error404/>
     },
     {
         path: '/about',
